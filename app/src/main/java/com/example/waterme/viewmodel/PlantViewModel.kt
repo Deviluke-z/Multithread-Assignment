@@ -49,7 +49,7 @@ class PlantViewModel(application: Application): ViewModel() {
             .build()
 
         // TODO: Enqueue the request as a unique work request
-        WorkManager.getInstance().enqueueUniqueWork(plantName,ExistingWorkPolicy.REPLACE, request)
+        WorkManager.getInstance().enqueueUniqueWork(plantName, ExistingWorkPolicy.REPLACE, request)
     }
 }
 
